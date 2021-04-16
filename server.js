@@ -5,11 +5,11 @@ const path = require('path');
 // API routes
 const { notes } = require('./db/db');
 
-// Initialize epxress as a variable
-const app = express();
-
 // Assign a port for the local server to listen to
 const PORT = process.env.PORT || 3001;
+
+// Initialize epxress as a variable
+const app = express();
 
 // Initialize a static folder 'Public'
 app.use(express.static(path.join(__dirname, 'public')));
