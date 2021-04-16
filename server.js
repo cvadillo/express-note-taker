@@ -29,4 +29,6 @@ app.get('/notes', (req, res) => {
 });
 
 // Initialize the server listening
-app.listen(PORT, () => console.log(`The server has been initiated on port ${PORT}`));
+app.listen(PORT, () => {
+	console.log(`The server has been initiated on port ${PORT}`)
+});
